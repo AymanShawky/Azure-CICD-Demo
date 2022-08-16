@@ -13,7 +13,7 @@ namespace DemoCICD.Test
 
             var result = helloController.Get();
 
-            Assert.AreEqual("Hello World! _ break the test", result);
+            Assert.AreEqual("Hello World!", result);
         }
 
         [TestMethod]
