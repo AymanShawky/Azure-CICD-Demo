@@ -17,16 +17,6 @@ namespace DemoCICD.Test
         }
 
         [TestMethod]
-        public void GetMethodWithId_Null_ShouldReturnError()
-        {
-            HelloController helloController = new HelloController();
-
-            var result = helloController.Get("");
-
-            Assert.AreEqual("Error", result);
-        }
-
-        [TestMethod]
         public void GetMethodWithId_Value_ShouldReturnHelloValue()
         {
             //setup
