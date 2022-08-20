@@ -12,19 +12,14 @@ namespace DemoCICD.Controllers
     public class HelloController : ControllerBase
     {
         [HttpGet]
-        public string Get()
+        public string Get(string name = "")
         {
-            return "Hello World!";
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return "Hello world!";
+            }
+            return "Hello " + name;
         }
 
-        [HttpGet("id")]
-        public string Get(string id)
-        {
-            if (string.IsNullOrWhiteSpace(id))
-            {
-                return "Error";
-            }
-            return "Hello " + id;
-        }
     }
 }
