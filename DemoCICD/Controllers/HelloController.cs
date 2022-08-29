@@ -19,7 +19,6 @@ namespace DemoCICD.Controllers
                 return "Hello World!";
             }
 
-
             return "Hello " + name;
         }
 
