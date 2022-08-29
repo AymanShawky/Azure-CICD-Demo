@@ -9,17 +9,20 @@ namespace DemoCICD.Test
         [TestMethod]
         public void GetMethod_ShouldReturnHelloWorld()
         {
+            //arrange
+            string expected = "Hello World!";
+
             HelloController helloController = new HelloController();
 
             var result = helloController.Get();
 
-            Assert.AreEqual("Hello World!", result);
+            Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
         public void GetMethodWithId_Value_ShouldReturnHelloValue()
         {
-            //setup
+            //arrange
 
             string value = "Test";
             

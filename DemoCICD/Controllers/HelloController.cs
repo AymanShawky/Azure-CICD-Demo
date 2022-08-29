@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace DemoCICD.Controllers
 {
@@ -16,7 +12,7 @@ namespace DemoCICD.Controllers
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return "Hello World!";
+                return "Hello World";
             }
              
             return "Hello " + name;
