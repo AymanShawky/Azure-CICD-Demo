@@ -12,7 +12,7 @@ namespace DemoCICD.Controllers
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                return "Hello World";
+                return "Hello World!";
             }
              
             return "Hello " + name;
